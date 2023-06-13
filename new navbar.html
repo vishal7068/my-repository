@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My POrtfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        background-color: cadetblue;
+        height: 80px;
+        width: 100%;
+      }
+      .navigation {
+        display: inline-block;
+      }
+      H1 {
+        margin-top: 8px;
+        padding-top: 10px;
+        display: inline-block;
+
+      }
+      .folio{
+        color: red;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      li {
+        list-style: none;
+        padding-left: 80px;
+      }
+      a {
+        text-decoration: none;
+        color:white;
+        
+      }
+      section {
+        background-image: url(vishal.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index:-1;
+      }
+      .outer-heading {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 300px;
+        padding-bottom: 200px;
+      }
+
+      .intro {
+        font-size: 45px;
+      }
+
+      .inner-heading {
+        border: 0px solid #ddd;
+        height: 50px;
+        line-height: 50px;
+        font-size: 45px;
+        text-transform: uppercase;
+        overflow: hidden;
+      }
+
+      .inner-heading span {
+        position: relative;
+        color: rgb(241, 138, 20);
+        animation: animation 10s ease infinite;
+      }
+
+      @keyframes animation {
+        0%,
+        100% {
+          top: 0;
+        }
+        20% {
+          top: 0;
+        }
+        25% {
+          top: -50px;
+        }
+        45% {
+          top: -50px;
+        }
+        50% {
+          top: -100px;
+        }
+        70% {
+          top: -100px;
+        }
+        75% {
+          top: -150px;
+        }
+        90% {
+          top: -150px;
+        }
+        95% {
+          top: -200px;
+        }
+        100% {
+          top: -200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <h1>Port<span class="folio">folio</span></h1>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <section ="Home">
+        <div class="outer-heading">
+          <h1 class="intro">
+            I'am
+            <div class="inner-heading">
+              <span>
+                UI/UX Designer <br />
+                Front-End Developer <br />
+                Back-End Developer <br />
+                Full-stack Developer <br />
+              </span>
+            </div>
+          </h1>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
